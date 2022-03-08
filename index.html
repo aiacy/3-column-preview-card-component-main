@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Inter:wght@400;700&family=Lexend+Deca&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | 3-column preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    main.container{
+      display: grid;
+      align-content: center;
+      justify-content: center;
+      height: 100vh;
+      
+    }
+    .card-component{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      width: 915px;
+      height: 500px;
+      border-radius: 1rem;
+    }
+
+    h1{
+      color: hsl(0, 0%, 95%);
+      font-family: 'Big Shoulders Display', cursive;
+      text-transform: uppercase;
+    }
+
+    p{
+      color: hsla(0, 0%, 100%, 0.75);
+      font-size: 15px;
+      font-family: 'Lexend Deca', sans-serif;
+      line-height: 1.5rem;
+    }
+
+
+    .suv{
+      background-color: hsl(184, 100%, 22%);
+      color: hsl(184, 100%, 22%);
+    }
+    .sedan{
+      background-color: hsl(31, 77%, 52%);
+      color: hsl(31, 77%, 52%);
+      border-radius: 1rem 0 0 1rem;
+    }
+    .luxury{
+      background-color: hsl(179, 100%, 13%);
+      color: hsl(179, 100%, 13%);
+      border-radius: 0rem 1rem 1rem 0rem;
+    }
+
+    .car-type{
+      display: grid;
+      padding: 3rem;
+    }
+
+    button{
+      background-color: hsl(0, 0%, 95%) !important;
+      border: none;
+      width: 160px;
+      border-radius: 2rem !important;
+      text-transform: capitalize;
+      font-family: 'Lexend Deca', sans-serif;
+    }
+
+    .attribution { font-size: 11px; text-align: center; margin: 1rem; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <div class="card-component">
+      <div class="car-type sedan">
+        <img src="./images/icon-sedans.svg" alt="">
+        <h1>Sedans</h1>
+        <p>
+          Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the city 
+          or on your next road trip.
+        </p>
+        <button class="sedan">learn more</button>
+      </div>
+      <div class="car-type suv">
+        <img src="./images/icon-suvs.svg" alt="">
+        <h1>SUVs</h1>
+        <p>
+          Take an SUV for its spacious interior, power, and versatility. Perfect for your next family vacation 
+          and off-road adventures.
+        </p>
+        <button class="suv">learn more</button>
+      </div>
+      <div class="car-type luxury">
+        <img src="./images/icon-luxury.svg" alt="">
+        <h1> Luxury</h1>
+        <p>
+          Cruise in the best car brands without the bloated prices. Enjoy the enhanced comfort of a luxury 
+          rental and arrive in style.
+          
+        </p>
+        <button class="luxury">learn more</button>
+      </div>
+    </div>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Aliyah Regina</a>.
+    </div>
+  </main>
+</body>
+</html>
